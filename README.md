@@ -9,6 +9,8 @@ The patched ACPI tables, only containing the DSDT and SSDT (non-dynamic SSDT’s
 
 DO NOT COPY AND USE, use the patches that I have used recommended on this repo.
 
+To avoid errors during recompilation of ACPI tables, use the iasl CLI utility to disassemble tables and any refs needed. Also use RehabMan’s fork of MaciASL because the original branch of MaciASL does not include iasl 6.1 which is the current most recent standard of ACPI.
+
 # Guide
 Comprehensive guide for creating a bootable Clover USB
 http://www.insanelymac.com/forum/topic/305255-making-a-10101011-usb-installer-w-clover-uefi-and-legacy-the-correct-way/ <br />
