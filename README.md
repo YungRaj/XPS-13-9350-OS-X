@@ -11,13 +11,13 @@ DO NOT COPY AND USE, use the patches that I have used recommended on this repo.
 
 # Guide
 Comprehensive guide for creating a bootable Clover USB
-http://www.insanelymac.com/forum/topic/305255-making-a-10101011-usb-installer-w-clover-uefi-and-legacy-the-correct-way/
+http://www.insanelymac.com/forum/topic/305255-making-a-10101011-usb-installer-w-clover-uefi-and-legacy-the-correct-way/ <br />
 Note: patch IOKit for correct pixel clock 
 https://github.com/Floris497/mac-pixel-clock-patch-V2
 
 # Patches
 
-1. “Rename GFX0” (DSDT and SSDT-5)
+1. “Rename GFX0” (DSDT and SSDT-5) 
 2. “PNLF backlight”
 3. “Skylake LPC”
 4. “USB_PRW_0x6D_Skylake”
@@ -29,7 +29,7 @@ https://github.com/Floris497/mac-pixel-clock-patch-V2
 10. ”OS Check Fix (Win 8)“
 11. ”Fix Mutex with non-zero SyncLevel"
 12. ”Fix PNOT/PPNT" (use only if you're dropping CPU related SSDTs)
-13. ”Rename HECI device to IMEI"
+13. ”Rename HECI device to IMEI" <br />
 Note: the battery status patch is not necessary, although there is an XPS 13 patch on RehabMan’s ACPI repository. (https://github.com/RehabMan/Laptop-DSDT-Patch)
 
 
@@ -47,19 +47,19 @@ Note: the battery status patch is not necessary, although there is an XPS 13 pat
 
 
 # Credits
-EDK 2 https://github.com/tianocore/edk2
-Clover dev team https://sourceforge.net/projects/cloverefiboot/
-InsanelyMac forum http://insanelymac.com/forum
-PJALM (many ACPI patches)
-RehabMan (ACPIBatteryManager, IntelBacklight, etc)
-emlydinesh
-Download-Fritz
-Poco (the goat)
+EDK 2 https://github.com/tianocore/edk2 <br />
+Clover dev team https://sourceforge.net/projects/cloverefiboot/ <br />
+InsanelyMac forum http://insanelymac.com/forum <br />
+PJALM (many ACPI patches) <br />
+RehabMan (ACPIBatteryManager, IntelBacklight, etc) <br />
+emlydinesh <br />
+Download-Fritz <br />
+Poco (the goat) <br />
 
 # Resources
-http://www.uefi.org
-https://sourceforge.net/projects/maciasl/
-https://github.com/RehabMan/OS-X-MaciASL-patchmatic
-http://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/
+http://www.uefi.org <br />
+https://sourceforge.net/projects/maciasl/ <br />
+https://github.com/RehabMan/OS-X-MaciASL-patchmatic <br />
+http://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/ <br />
 
 
