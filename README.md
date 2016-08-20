@@ -9,6 +9,12 @@ The patched ACPI tables, only containing the DSDT and SSDT (non-dynamic SSDT’s
 
 DO NOT COPY AND USE, use the patches that I have used recommended on this repo.
 
+# Guide
+Comprehensive guide for creating a bootable Clover USB
+http://www.insanelymac.com/forum/topic/305255-making-a-10101011-usb-installer-w-clover-uefi-and-legacy-the-correct-way/
+Note: patch IOKit for correct pixel clock 
+https://github.com/Floris497/mac-pixel-clock-patch-V2
+
 # Patches
 
 1. “Rename GFX0” (DSDT and SSDT-5)
@@ -33,13 +39,11 @@ Note: the battery status patch is not necessary, although there is an XPS 13 pat
 2. IntelBacklight.kext
 3. ApplePS2SmartTouchpad.kext
 4. ACPIBatteryManager.kext
-
-Optional
-5. FakePCIID.kext (for BCM94352Z)
-6. FakePCIID_BCM94352*.kext (for BCM94352Z)
-7. AppleHDADisabler.kext
-8. VoodooHDA.kext
-9. patched AppleHDA.kext (choose)
+5. FakePCIID.kext - optional (for BCM94352Z)
+6. FakePCIID_BCM94352*.kext - optional (for BCM94352Z)
+7. AppleHDADisabler.kext - optional
+8. VoodooHDA.kext - optional 
+9. patched AppleHDA.kext - optional (choose)
 
 
 # Credits
@@ -52,5 +56,10 @@ emlydinesh
 Download-Fritz
 Poco (the goat)
 
+# Resources
+http://www.uefi.org
+https://sourceforge.net/projects/maciasl/
+https://github.com/RehabMan/OS-X-MaciASL-patchmatic
+http://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/
 
 
