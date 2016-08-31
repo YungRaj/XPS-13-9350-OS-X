@@ -32,7 +32,9 @@ https://github.com/Floris497/mac-pixel-clock-patch-V2
 11. ”Fix Mutex with non-zero SyncLevel"
 12. ”Fix PNOT/PPNT" (use only if you're dropping CPU related SSDTs)
 13. ”Rename HECI device to IMEI" <br />
-Note: the battery status patch is not necessary, although there is an XPS 13 patch on RehabMan’s ACPI repository. (https://github.com/RehabMan/Laptop-DSDT-Patch)
+Note: the battery status patch is not necessary, although there is an XPS 13 patch on RehabMan’s ACPI repository. (https://github.com/RehabMan/Laptop-DSDT-Patch) <br />
+<br />
+Sleep - if you have HD 530 or higher GFX, enter sudo pmset hibernatemode 25 in Terminal for proper display wake (machine goes to hibernate mode)
 
 
 # Kexts 
