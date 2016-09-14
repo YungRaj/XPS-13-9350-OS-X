@@ -13,11 +13,13 @@ To avoid errors during recompilation of ACPI tables, use the iasl CLI utility to
 
 # Guide
 Use setup_var to change DVMT prealloc IGPU memory and disable MSR 0xe2 CPU Register lock (also known as CFG Lock)
-Usage: (address of BIOS option is different for every machine)
-1. Use a UEFI ROM flash dumper such as FPT/AMIFlash to dump UEFI image. Use UEFITool to extract Setup image and Universal IFR Extractor to retrieve BIOS option data. Find CFG Lock and DVMT and determine the address of the BIOS option to change as well as the option to write to NVRAM.
-2. Boot into the setup_var shell
-3. CFG Lock: setup_var 0x109 0x0
-4. DVMT Prealloc: setup_var 0x432 0x3
+Usage: (address of BIOS option is different for every machine) <br />
+1. Use a UEFI ROM flash dumper such as FPT/AMIFlash to dump UEFI image. Use UEFITool to extract Setup image and Universal IFR Extractor to retrieve BIOS option data. Find CFG Lock and DVMT and determine the address of the BIOS option to change as well as the option to write to NVRAM. <br />
+2. Boot into the setup_var shell <br />
+3. CFG Lock: setup_var 0x109 0x0 <br />
+4. DVMT Prealloc: setup_var 0x432 0x3 <br />
+WARNING: any damages or problems with the above commands are not my responsibility. This is for informational purposes only! <br />
+<br />
 Comprehensive guide for creating a bootable Clover USB
 http://www.insanelymac.com/forum/topic/305255-making-a-10101011-usb-installer-w-clover-uefi-and-legacy-the-correct-way/ <br />
 Note: patch IOKit for correct pixel clock 
