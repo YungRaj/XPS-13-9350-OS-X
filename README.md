@@ -12,7 +12,7 @@ DO NOT COPY AND USE, use the patches that I have used recommended on this repo.
 To avoid errors during recompilation of ACPI tables, use the iasl CLI utility to disassemble tables and any refs needed. Also use RehabMan’s fork of MaciASL because the original branch of MaciASL does not include iasl 6.1 which is the current most recent standard of ACPI.
 
 # Guide
-Use setup_var to change DVMT prealloc IGPU memory and disable MSR 0xe2 CPU Register lock (also known as CFG Lock)
+Use setup_var to change DVMT prealloc IGPU memory and disable MSR 0xe2 CPU Register lock (also known as CFG Lock) <br /> <br />
 Usage: (address of BIOS option is different for every machine) <br />
 1. Use a UEFI ROM flash dumper such as FPT/AMIFlash to dump UEFI image. Use UEFITool to extract Setup image and Universal IFR Extractor to retrieve BIOS option data. Find CFG Lock and DVMT and determine the address of the BIOS option to change as well as the option to write to NVRAM. <br />
 2. Boot into the setup_var shell <br />
@@ -22,7 +22,7 @@ WARNING: any damages or problems with the above commands are not my responsibili
 <br />
 Comprehensive guide for creating a bootable Clover USB
 http://www.insanelymac.com/forum/topic/305255-making-a-10101011-usb-installer-w-clover-uefi-and-legacy-the-correct-way/ <br />
-Note: patch IOKit for correct pixel clock 
+Note: patch IOKit for correct pixel clock <br />
 https://github.com/Floris497/mac-pixel-clock-patch-V2
 
 # Patches
