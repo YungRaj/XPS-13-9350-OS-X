@@ -1,5 +1,5 @@
 # XPS 13
-Current BIOS revision: 1.4.4
+Current firmware revision: 1.4.4
 This includes the whole CLOVER folder from my XPS 13
 (credits to the whole CLOVER team https://sourceforge.net/projects/cloverefiboot/)
 
@@ -13,8 +13,8 @@ To avoid errors during recompilation of ACPI tables, use the iasl CLI utility to
 
 # Guide
 Use setup_var to change DVMT prealloc IGPU memory and disable MSR 0xe2 CPU Register lock (also known as CFG Lock) <br /> <br />
-Usage: (address of BIOS option is different for every machine) <br />
-1. Use a UEFI ROM flash dumper such as FPT/AMIFlash to dump UEFI image. Use UEFITool to extract Setup image and Universal IFR Extractor to retrieve BIOS option data. Find CFG Lock and DVMT and determine the address of the BIOS option to change as well as the option to write to NVRAM. <br />
+Usage: (address of firmware option is different for every machine) <br />
+1. Use a UEFI ROM flash dumper such as FPT/AMIFlash to dump UEFI image. Use UEFITool to extract Setup image and Universal IFR Extractor to retrieve firmware option data in text/readable format. Find CFG Lock and DVMT and determine the address of the firmware option to change as well as the option to write to NVRAM. <br />
 2. Boot into the setup_var shell <br />
 3. CFG Lock: setup_var 0x109 0x0 <br />
 4. DVMT Prealloc: setup_var 0x432 0x3 <br />
